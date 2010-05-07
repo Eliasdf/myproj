@@ -1,0 +1,277 @@
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 14:54:18) [GET]
+Rendering hello/greet
+
+
+ActionView::MissingTemplate (Missing template hello/greet.erb in view path /home/edsonpaul/Desktop/myproj/app/views:):
+    /vendor/rails/actionpack/lib/action_view/template.rb:95:in `find_full_path'
+    /vendor/rails/actionpack/lib/action_view/template.rb:16:in `initialize'
+    /vendor/rails/actionpack/lib/action_view/base.rb:334:in `new'
+    /vendor/rails/actionpack/lib/action_view/base.rb:334:in `_unmemoized__pick_template'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:70:in `_pick_template'
+    /vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/edsonpaul/Desktop/myproj/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 14:54:48) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 14:56:01) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 15:14:26) [GET]
+
+
+ActionController::RoutingError (No route matches "/greet" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/edsonpaul/Desktop/myproj/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:14:52) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:22:42) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:23:38) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:24:40) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:24:41) [GET]
+Rendering hello/greet
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:24:42) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:24:42) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:24:57) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:25:26) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:26:01) [GET]
+Rendering hello/greet
+
+
+ActionView::MissingTemplate (Missing template hello/greet.erb in view path /home/edsonpaul/Desktop/myproj/app/views:):
+    /vendor/rails/actionpack/lib/action_view/template.rb:95:in `find_full_path'
+    /vendor/rails/actionpack/lib/action_view/template.rb:16:in `initialize'
+    /vendor/rails/actionpack/lib/action_view/base.rb:334:in `new'
+    /vendor/rails/actionpack/lib/action_view/base.rb:334:in `_unmemoized__pick_template'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:70:in `_pick_template'
+    /vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/edsonpaul/Desktop/myproj/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 15:26:52) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
+
+
+Processing HelloController#greet (for 127.0.0.1 at 2010-05-06 16:21:58) [GET]
+Rendering hello/greet
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/greet]
